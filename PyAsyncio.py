@@ -36,8 +36,8 @@ async def request_simulation_sync():
     # if without `await`, main() will stop as soon as `task1` and `task2` started
     print(f"Timespan (sync) : {(time.time() - t0)*1000:.2f} ms")
 
-# asyncio.run(request_simulation_async())
-# asyncio.run(request_simulation_sync())
+asyncio.run(request_simulation_async())
+asyncio.run(request_simulation_sync())
 
 
 ##### Multi-Task Simulation #####
